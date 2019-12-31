@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  julia:
+    build:
+      context: ./dockerfile
+    volumes:
+      - ./:/host
+    tty: true
+
+
